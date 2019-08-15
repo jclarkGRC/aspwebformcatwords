@@ -65,7 +65,6 @@
                 <p>&copy; <%: DateTime.Now.Year %> - Category Words</p>
             </footer>
         </div>
-
     </form>
 </body>
 </html>

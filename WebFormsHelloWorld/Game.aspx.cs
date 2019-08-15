@@ -9,12 +9,26 @@ namespace WebFormsHelloWorld
 {
     public partial class Game : System.Web.UI.Page
     {
-        // protected List<string> usedWords = new List<string>();
-
         protected void Page_Load(object sender, EventArgs e)
         {
             object savedCategory = Session["currentCategory"];
             currentCategory.Text = savedCategory.ToString();
+            if (!IsPostBack)
+            {
+                Session["Timer"] = DateTime.Now.AddSeconds(30).ToString();
+            }   
+        }
+        protected void CountSeconds_Tick(object sender, EventArgs e)
+        {
+            if(DateTime.Compare(DateTime.Now, DateTime.Parse(Session["Timer"].ToString())) < 0)
+            {
+                msg.Text = "Time Left: " + (((Int32)DateTime.Parse(Session["Timer"].ToString()).Subtract(DateTime.Now).TotalSeconds)%60).ToString() + " Seconds";
+            }
+            else
+            {
+                msg.Text = "Time's up!";
+                Response.Redirect("Contact.aspx");
+            }
         }
 
         protected void Save_Word(object sender, EventArgs e)
@@ -25,12 +39,13 @@ namespace WebFormsHelloWorld
             SavedWord.Text = "Enter a word that starts with: "
                 + Get_Last_Letter_Of_Word(currentWord);
             // Push the word to the used words list
-            // this.usedWords.Add(currentWord);
             usedWords.Items.Add(currentWord);
             // clear the text field after submission
             CurrentWord.Text = "";
+            //Reset the timer after entering a word
+            Session["Timer"] = DateTime.Now.AddSeconds(30).ToString();
         }
-
+        
         protected char Get_Last_Letter_Of_Word(string word)
         {
             char lastLetter = word[word.Length - 1];
@@ -39,3 +54,11 @@ namespace WebFormsHelloWorld
         }
     }
 }
+
+         
+            
+  
+
+
+
+         

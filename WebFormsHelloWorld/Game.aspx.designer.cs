@@ -13,6 +13,15 @@ namespace WebFormsHelloWorld {
     public partial class Game {
         
         /// <summary>
+        /// usedWords control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox usedWords;
+        
+        /// <summary>
         /// currentCategory control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,24 @@ namespace WebFormsHelloWorld {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal currentCategory;
+        
+        /// <summary>
+        /// up control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel up;
+        
+        /// <summary>
+        /// msg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal msg;
         
         /// <summary>
         /// SavedWord control.
@@ -40,6 +67,15 @@ namespace WebFormsHelloWorld {
         protected global::System.Web.UI.WebControls.TextBox CurrentWord;
         
         /// <summary>
+        /// secondsRemaining control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.Timer secondsRemaining;
+        
+        /// <summary>
         /// SubmitWord control.
         /// </summary>
         /// <remarks>
@@ -47,14 +83,5 @@ namespace WebFormsHelloWorld {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitWord;
-        
-        /// <summary>
-        /// usedWords control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox usedWords;
     }
 }
