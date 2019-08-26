@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="Category Words" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Game.aspx.cs" Inherits="WebFormsHelloWorld.Game" %>
 
+
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
         <div class="clearfix">
@@ -24,6 +26,5 @@
             <br />
             <asp:Timer ID="secondsRemaining" OnTick="CountSeconds_Tick" Interval="1000" runat="server" />
             <asp:Button ID="SubmitWord" runat="server" OnClick="Save_Word" Text="Submit Word" />
-            
-            </div>
+        </div>
     </asp:Content>

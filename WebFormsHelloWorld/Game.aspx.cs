@@ -9,14 +9,17 @@ namespace WebFormsHelloWorld
 {
     public partial class Game : System.Web.UI.Page
     {
+     
+
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { 
             object savedCategory = Session["currentCategory"];
             currentCategory.Text = savedCategory.ToString();
             if (!IsPostBack)
             {
                 Session["Timer"] = DateTime.Now.AddSeconds(30).ToString();
-            }   
+            }
+            // Page.ClientScript.RegisterStartupScript(this.GetType(), "JsFunc", "alert('hello world');", true);
         }
         protected void CountSeconds_Tick(object sender, EventArgs e)
         {
@@ -24,13 +27,12 @@ namespace WebFormsHelloWorld
             {
                 msg.Text = "Time Left: " + (((Int32)DateTime.Parse(Session["Timer"].ToString()).Subtract(DateTime.Now).TotalSeconds)%60).ToString() + " Seconds";
             }
-            else
+            if(msg.Text == "Time Left: 0 Seconds")
             {
-                msg.Text = "Time's up!";
-                Response.Redirect("Contact.aspx");
+                Response.Redirect("Scores.aspx");
             }
+            
         }
-
         protected void Save_Word(object sender, EventArgs e)
         {
             // Get the current word from the text field
@@ -39,7 +41,7 @@ namespace WebFormsHelloWorld
             SavedWord.Text = "Enter a word that starts with: "
                 + Get_Last_Letter_Of_Word(currentWord);
             // Push the word to the used words list
-            usedWords.Items.Add(currentWord);
+            usedWords.Items.Insert(0 ,currentWord);
             // clear the text field after submission
             CurrentWord.Text = "";
             //Reset the timer after entering a word

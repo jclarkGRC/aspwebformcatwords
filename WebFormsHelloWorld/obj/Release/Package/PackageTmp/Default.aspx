@@ -9,15 +9,14 @@
        is up! Good Luck!
     </p>
     <div>
+        <h4>Please choose a category...</h4>
         <asp:DropDownList ID="CategoriesDropDownList" runat="server">
             <asp:ListItem>Cars</asp:ListItem>
             <asp:ListItem>Animals</asp:ListItem>
             <asp:ListItem>Movies</asp:ListItem>
             <asp:ListItem>People Names</asp:ListItem>
         </asp:DropDownList>
-        <br />
-         <asp:Button  ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" OnClientClick="btnSubmit_Click" />
-        <br />
-        <asp:Literal ID="selectedCategory" runat="server">Please select a category</asp:Literal>
+        <br /><br />
+        <asp:Button  ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
     </div>
 </asp:Content>

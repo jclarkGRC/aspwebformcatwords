@@ -1,5 +1,3 @@
-C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.csprojAssemblyReference.cache
-C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.csproj.CoreCompileInputs.cache
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\WebFormsHelloWorld.dll.config
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\WebFormsHelloWorld.dll
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\WebFormsHelloWorld.pdb
@@ -46,6 +44,8 @@ C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\Newtonsoft
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\Antlr3.Runtime.pdb
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.csprojAssemblyReference.cache
+C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.csproj.CoreCompileInputs.cache
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.csproj.CopyComplete
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.dll
 C:\Users\mmorp\Source\Repos\WebFormsHelloWorld\WebFormsHelloWorld\obj\Debug\WebFormsHelloWorld.pdb

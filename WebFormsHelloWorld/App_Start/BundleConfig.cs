@@ -20,6 +20,8 @@ namespace WebFormsHelloWorld
                             "~/Scripts/WebForms/GridView.js",
                             "~/Scripts/WebForms/DetailsView.js",
                             "~/Scripts/WebForms/TreeView.js",
+                            "~/Scripts/WebForms/Game.js",
+                            "~/Scripts/WebForms/Scores.js",
                             "~/Scripts/WebForms/WebParts.js"));
 
             // Order is very important for these files to work, they have explicit dependencies
